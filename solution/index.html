@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="menu">
+        <button class="btn" onclick="start()">Start game</button>
+        <button class="btn" onclick="showInstructions()">Instructions</button>
+      </div>
+      <div id="instructions">
+        <button id="close-btn" onclick="closeInstructions()">X</button>
+        <p>
+          Two players wait for a signal to start after a random delay. Once the start signal, first person to press their key wins. If a
+          player presses before the signal appears, they lose. Player one presses the q key and player 2 presses the p key.
+        </p>
+      </div>
+      <div id="signal"></div>
+      <div id="score">
+        <div id="p1-score"></div>
+        <div id="p2-score"></div>
+      </div>
+      <div id="results">
+        <h1></h1>
+        <button class="btn" onclick="restart()">Restart</button>
+      </div>
+      <div id="game">
+        <img id="p1" class="player" src="../imgs/p1.gif" />
+        <img id="prize" src="../imgs/prize.gif" />
+        <img id="p2" class="player" src="../imgs/p2.gif" />
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
