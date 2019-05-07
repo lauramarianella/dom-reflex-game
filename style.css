@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+.gameButton{
+    color: white;
+    background: #3a3633;
+    padding: 18px 40px;
+    font-size: 1rem;
+    border: 5px solid lightgray;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+.gameButton:hover{
+    background: #9e9e9e;
+    color:#fff;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    min-height: 100vh;
+    background: url('imgs/bg.gif');
+    background-size: cover;
+    color: #fff;
+}
+  
+.menu{
+    padding: 30px;
+}
+
+.status{
+    padding: 30px;
+}
+
+.arena{
+    padding: 30px;
+    height: 400px;
+    width: 100%;
+}
