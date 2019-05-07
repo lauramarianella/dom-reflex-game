@@ -12,10 +12,30 @@ body {
     display: block;
     cursor: pointer;
     transition: background 0.2s ease-in-out;
+    font-size: 2rem;
 }
 .gameButton:hover{
     background: #9e9e9e;
     color:#fff;
+}
+#divIdInstructions{
+    color: white;
+    background: #3a3633;
+    padding: 18px 40px;
+    font-size: 1rem;
+    border: 5px solid lightgray;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    position: relative;
+    max-width: 60%;
+    font-size: 2rem;
+}
+.closeButton{
+    position: absolute;
+    right: 0;
+    top:0;
 }
 
 .center-content {

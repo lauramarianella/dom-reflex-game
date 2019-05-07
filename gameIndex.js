@@ -16,4 +16,4 @@ function run(){
                                                          });
     nodeMain.appendChild(btnInstructionsGameBtn);
 }
-run();
+//run();
