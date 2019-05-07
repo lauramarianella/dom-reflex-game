@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+}
+
+#container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../imgs/bg.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+.btn {
+  display: block;
+  padding: 20px;
+  width: 250px;
+  margin: 40px;
+  background: #28404f;
+  color: #fff;
+  font-size: 2rem;
+  border: 8px solid #7f939d;
+  cursor: pointer;
+}
+
+#instructions {
+  max-width: 60%;
+  background: #28404f;
+  color: #fff;
+  font-size: 2rem;
+  border: 8px solid #7f939d;
+  padding: 20px;
+  text-align: center;
+  display: none;
+  position: relative;
+}
+
+#close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  border: 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#score {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#score > div {
+  position: absolute;
+}
+
+#score img {
+  max-width: 50px;
+  margin: 10px;
+}
+
+#p1-score {
+  left: 50px;
+}
+
+#p2-score {
+  right: 50px;
+}
+
+#game {
+  display: none;
+  margin: 100px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.signal {
+  max-width: 100px;
+  animation: bounce 0.6s ease-in-out;
+}
+
+#prize {
+  display: none;
+  max-width: 100px;
+}
+
+#results {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#results > h1 {
+  color: #fff;
+  font-size: 5rem;
+  font-family: fantasy;
+}
+
+.player {
+  max-width: 100px;
+}
+
+.p1-move {
+  transform: translateX(calc(50vw - 50% - 100px));
+  transition: transform 1s ease-in-out;
+}
+
+.p2-move {
+  transform: translateX(calc(-50vw + 50% + 100px));
+  transition: transform 1s ease-in-out;
+}
+
+#p1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#p2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(2);
+  }
+  60% {
+    transform: scale(0.6);
+  }
+  80% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
